@@ -1,8 +1,10 @@
+import csv
+import time
+from datetime import datetime
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from bs4 import BeautifulSoup
-import csv
-import time
+
 
 def extract_table_data(html_content):
     soup = BeautifulSoup(html_content, 'html.parser')
@@ -44,10 +46,14 @@ driver.set_window_size(550, 691)
 all_data = []
 headers = []
 
-with open('eva_data_extract22.csv', 'w', newline='', encoding='utf-8') as file:
+timestamp = datetime.now().strftime("%Y%m%d%H%M%S")
+
+file_name = f"eva_data_extract_{timestamp}.csv"
+
+with open(file_name, 'w', newline='', encoding='utf-8') as file:
     writer = None
 
-    for i in range(17, 51):
+    for i in range(2, 51):
         for j in range(2, 300):
             try:
                 page_source = fetch_eva(driver, str(i), str(j))

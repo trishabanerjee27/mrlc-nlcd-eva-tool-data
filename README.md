@@ -6,6 +6,7 @@ This repository contains data scraped from the Multi-Resolution Land Characteris
 
 The data was collected by scraping the MRLC website using a web scraping tool. Specifically, the data was collected from the "Land Cover Area and Change Distribution" table displayed after hitting the "Get Started" button on the MRLC website.
 
+
 ## Variables and Their Significance
 
 The following variables were fetched from the website, along with their descriptions and significance:
