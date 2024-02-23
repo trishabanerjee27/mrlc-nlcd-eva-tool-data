@@ -6,6 +6,11 @@ This repository contains data scraped from the Multi-Resolution Land Characteris
 
 The data was collected by scraping the MRLC website using a web scraping tool. Specifically, the data was collected from the "Land Cover Area and Change Distribution" table displayed after hitting the "Get Started" button on the MRLC website.
 
+## Data
+
+The data can be found here:
+https://www.kaggle.com/datasets/trishabanerjee27/mrlc-nlcd-eva-tool/
+
 
 ## Variables and Their Significance
 
